@@ -405,6 +405,7 @@ app.post('/api/extract', async (req, res) => {
         '--disable-gpu',
         '--disable-blink-features=AutomationControlled',
         '--window-size=1280,800',
+        '--single-process', // Required for Docker/Render
       ],
       ignoreHTTPSErrors: true,
     };
